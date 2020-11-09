@@ -5,3 +5,58 @@
 }
 
 /* TODO */
+
+main
+{
+  width: 85%;
+  margin: 0 auto;
+}
+.movies
+{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+.movies .thumbnail
+{
+  margin: 5px;
+}
+.movies .thumbnail img
+{
+  width: 100%;
+  height: auto;
+}
+.movies form
+{
+  grid-area: 1 / 1 / 2 / span 9;
+}
+.movies form input
+{
+  width: 70%;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid rgb(132, 132, 226);
+}
+.movies form button
+{
+  width: 10%;
+  background-color: rgb(69, 118, 165);
+  padding: 5px;
+  margin: 10px;
+  color: white;
+  border: none;
+}
+
+.movies .featured
+{
+  grid-area: 2 / 1 / span 4 / span 6;
+  margin: 10px;
+}
+.movies .featured img
+{
+  width: 40%;
+  margin-right: 10px;
+}
+.hidden
+{
+  display: none;
+}
